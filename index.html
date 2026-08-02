@@ -30,6 +30,8 @@ body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-grad
 
 /* HERO */
 .h{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:76px 1.5rem 2rem;text-align:center;position:relative}
+.h::before{content:'';position:absolute;inset:0;background:url('assets/hero-bg.webp') center/cover no-repeat;opacity:.25;z-index:0}
+.h::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,transparent 40%,transparent 70%,var(--bg) 100%);z-index:0}
 .hc{max-width:700px;position:relative;z-index:1}
 .hbadge{display:inline-flex;align-items:center;gap:.35rem;background:rgba(13,148,136,.1);border:1px solid var(--ba);padding:.25rem .7rem;border-radius:12px;font-size:.6rem;font-weight:600;color:var(--r);margin-bottom:.8rem;font-family:var(--fm)}
 .hbadge .dot{width:5px;height:5px;border-radius:50%;background:var(--r);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
