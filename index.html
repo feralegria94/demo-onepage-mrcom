@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0A1628">
+<meta name="description" content="Cabañas del Mar — Descansa frente al mar de Chiloé. Cabañas equipadas con vista al océano, tinaja caliente, WiFi y desayuno casero. A minutos de Castro.">
+<meta property="og:title" content="Cabañas del Mar · Alojamiento frente al mar en Chiloé">
+<meta property="og:description" content="Cabañas equipadas con vista al mar. Tinaja, desayuno, WiFi. Escápate a Chiloé.">
+<title>Cabañas del Mar · Alojamiento frente al mar en Chiloé</title>
+<style>
+:root{--r:#0D9488;--rd:#0F766E;--rg:rgba(13,148,136,0.3);--o:#F59E0B;--g:#D4A843;--bg:#0A1628;--bg2:#0E1D35;--s:#112240;--s2:#162D50;--t:#F1F5F9;--t2:#B0C4DE;--t3:#6B8DB5;--t4:#3A5278;--b:rgba(255,255,255,0.05);--bh:rgba(255,255,255,0.1);--ba:rgba(13,148,136,0.2);--gp:linear-gradient(135deg,#0D9488,#0F766E);--gh:linear-gradient(135deg,#0D9488 0%,#F59E0B 100%);--fb:'Inter',system-ui,sans-serif;--fd:'Outfit',sans-serif;--fm:'JetBrains Mono',monospace;--tr:all .3s cubic-bezier(.4,0,.2,1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--bg);color:var(--t);line-height:1.6;overflow-x:hidden;position:relative}
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse 60% 40% at 50% 0%,rgba(13,148,136,.06) 0%,transparent 55%),radial-gradient(ellipse 30% 30% at 80% 90%,rgba(245,158,11,.04) 0%,transparent 45%);pointer-events:none}
+
+/* NAV */
+.n{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,22,40,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--b);height:56px;display:flex;align-items:center}
+.nc{display:flex;justify-content:space-between;align-items:center;width:100%;max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.nl{font-size:1rem;font-weight:800;color:var(--t);text-decoration:none;font-family:var(--fd);letter-spacing:-.3px}
+.nl span{background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nm{display:flex;gap:1.4rem;list-style:none;align-items:center}
+.nm a{font-size:.78rem;font-weight:600;color:var(--t2);text-decoration:none;transition:var(--tr)}.nm a:hover{color:var(--t)}
+.nb{display:inline-flex;align-items:center;gap:.3rem;background:var(--gp);color:#fff;padding:.4rem 1rem;border-radius:8px;font-size:.72rem;font-weight:600;text-decoration:none;transition:var(--tr)}
+.nb:hover{transform:translateY(-1px);box-shadow:0 4px 18px var(--rg)}
+.nh{display:none;width:36px;height:36px;align-items:center;justify-content:center;font-size:1.1rem;color:var(--t2);background:rgba(255,255,255,.04);border:1px solid var(--b);border-radius:8px;cursor:pointer}
+@media(max-width:768px){.nm{display:none}.nh{display:flex}.nm.active{display:flex;position:fixed;top:0;right:0;width:250px;height:100vh;background:rgba(10,22,40,.97);border-left:1px solid var(--b);flex-direction:column;padding:1.2rem;gap:.5rem;z-index:101}}
+.mc{display:none;width:32px;height:32px;align-items:center;justify-content:center;font-size:1rem;color:var(--t2);background:rgba(255,255,255,.06);border:1px solid var(--b);border-radius:8px;cursor:pointer;margin-left:auto;margin-bottom:.5rem}
+@media(max-width:768px){.mc{display:flex}}
+
+/* HERO */
+.h{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:76px 1.5rem 2rem;text-align:center;position:relative}
+.hc{max-width:700px;position:relative;z-index:1}
+.hbadge{display:inline-flex;align-items:center;gap:.35rem;background:rgba(13,148,136,.1);border:1px solid var(--ba);padding:.25rem .7rem;border-radius:12px;font-size:.6rem;font-weight:600;color:var(--r);margin-bottom:.8rem;font-family:var(--fm)}
+.hbadge .dot{width:5px;height:5px;border-radius:50%;background:var(--r);animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hh{font-size:clamp(1.8rem,4.5vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-.5px;margin-bottom:.8rem;font-family:var(--fd)}
+.hh em{font-style:normal;background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hp{font-size:.9rem;color:var(--t2);max-width:480px;margin:0 auto 1.5rem;line-height:1.7}
+.hinfo{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;font-size:.68rem;color:var(--t3)}
+.hinfo span{display:flex;align-items:center;gap:.3rem}
+.hb{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+
+/* BUTTONS */
+.bt{display:inline-flex;align-items:center;gap:.4rem;padding:.65rem 1.5rem;border-radius:10px;font-size:.78rem;font-weight:600;text-decoration:none;transition:var(--tr);border:none;cursor:pointer;font-family:var(--fb)}
+.bt-p{background:var(--gp);color:#fff;box-shadow:0 4px 18px var(--rg)}.bt-p:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(13,148,136,.35)}
+.bt-o{background:transparent;border:1px solid var(--bh);color:var(--t)}.bt-o:hover{background:var(--s);border-color:var(--t4)}
+
+/* SECTIONS */
+.sc{padding:4rem 1.5rem;max-width:1000px;margin:0 auto}
+.sh{text-align:center;margin-bottom:2.5rem}.sh .sl{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--r);margin-bottom:.4rem}
+.sh h2{font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.3px;font-family:var(--fd);margin-bottom:.3rem}
+.sh p{color:var(--t3);font-size:.85rem;max-width:450px;margin:0 auto}
+.dark{background:var(--bg2);max-width:none;padding:4rem 1.5rem}
+
+/* CABINS GRID */
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.card{background:var(--s);border:1px solid var(--b);border-radius:14px;overflow:hidden;transition:var(--tr)}
+.card:hover{transform:translateY(-4px);border-color:var(--ba);box-shadow:0 8px 25px rgba(0,0,0,.5)}
+.card-img{height:170px;background:var(--s2);display:flex;align-items:center;justify-content:center;font-size:3.5rem;border-bottom:1px solid var(--b);position:relative;overflow:hidden}
+.card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,var(--s))}
+.card-tag{position:absolute;top:.6rem;right:.6rem;background:rgba(13,148,136,.9);color:#fff;font-size:.55rem;font-weight:700;padding:.2rem .5rem;border-radius:6px;z-index:2}
+.card-body{padding:1.2rem}
+.card-body h3{font-size:.8rem;font-weight:700;font-family:var(--fd);margin-bottom:.2rem}
+.card-body p{font-size:.68rem;color:var(--t3);margin-bottom:.5rem;line-height:1.5}
+.card-body .guests{font-size:.62rem;color:var(--t4);margin-bottom:.6rem;display:flex;align-items:center;gap:.4rem}
+.card-body .price{font-size:.85rem;font-weight:900;font-family:var(--fm);background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.card-body .price small{font-size:.55rem;color:var(--t3);-webkit-text-fill-color:var(--t3);font-weight:400}
+@media(max-width:768px){.cg{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.cg{grid-template-columns:1fr}}
+
+/* SERVICES */
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;max-width:850px;margin:0 auto}
+.svc{background:var(--s);border:1px solid var(--b);border-radius:12px;padding:1.2rem .8rem;text-align:center;transition:var(--tr)}
+.svc:hover{border-color:var(--ba);transform:translateY(-2px)}
+.svc .icon{font-size:1.8rem;margin-bottom:.5rem}
+.svc h4{font-size:.7rem;font-weight:700;font-family:var(--fd);margin-bottom:.15rem}
+.svc p{font-size:.6rem;color:var(--t3);line-height:1.4}
+@media(max-width:700px){.sg{grid-template-columns:repeat(2,1fr)}}@media(max-width:400px){.sg{grid-template-columns:1fr}}
+
+/* ABOUT */
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;max-width:850px;margin:0 auto}
+.ab h2{font-size:1.8rem;font-weight:800;font-family:var(--fd);margin-bottom:.8rem}
+.ab p{font-size:.9rem;color:var(--t2);line-height:1.7;margin-bottom:.6rem}
+.ab .ab-stats{display:flex;gap:1.5rem;margin-top:1.2rem}
+.ab .ab-stats div{text-align:center}
+.ab .ab-stats strong{display:block;font-size:1.6rem;font-weight:900;font-family:var(--fm);background:var(--gh);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ab .ab-stats span{font-size:.62rem;color:var(--t3);text-transform:uppercase;letter-spacing:.5px}
+@media(max-width:700px){.ab{grid-template-columns:1fr;text-align:center}.ab-stats{justify-content:center}}
+
+/* CONTACT */
+.cta-box{background:linear-gradient(135deg,var(--s),rgba(13,148,136,.08));border:1px solid var(--ba);border-radius:18px;padding:2.5rem 1.5rem;text-align:center;max-width:600px;margin:0 auto}
+.cta-box h2{font-size:1.5rem;font-weight:800;font-family:var(--fd);margin-bottom:.4rem}
+.cta-box p{color:var(--t3);font-size:.8rem;margin-bottom:1.5rem}
+.cta-box a{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem!important;padding:.8rem 2rem!important}
+
+/* DEMO BADGE */
+.demo-badge{background:linear-gradient(135deg,var(--s2),rgba(13,148,136,.15));border:1px solid var(--ba);border-radius:14px;padding:1.5rem;text-align:center;max-width:600px;margin:2rem auto 0}
+.demo-badge p{font-size:.72rem;color:var(--t2);margin-bottom:.4rem}
+.demo-badge a{color:var(--r);font-weight:700;text-decoration:none;font-size:.8rem}
+.demo-badge a:hover{text-decoration:underline}
+
+/* FOOTER */
+.ft{border-top:1px solid var(--b);background:var(--bg);padding:3rem 1.5rem 1.5rem;text-align:center}
+.ft p{font-size:.65rem;color:var(--t4)}
+.ft p+p{margin-top:.2rem}
+.ft a{color:var(--r);text-decoration:none}
+
+/* WhatsApp float */
+.wsp{position:fixed;bottom:1.5rem;right:1.5rem;z-index:200;width:52px;height:52px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 20px rgba(37,211,102,.4);text-decoration:none;transition:var(--tr);animation:wspBounce 2s infinite}
+.wsp:hover{transform:scale(1.1);box-shadow:0 6px 25px rgba(37,211,102,.5)}
+@keyframes wspBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+@media(max-width:600px){
+  .h{padding:70px 1rem 1.5rem}.hh{font-size:1.5rem}.hp{font-size:.78rem}
+  .hb{flex-direction:column;align-items:stretch}.bt{justify-content:center}.bt-o{order:2}
+  .sc{padding:2.5rem 1rem}.dark{padding:2.5rem 1rem}
+  .hinfo{gap:.8rem}
+}
+@media(max-width:400px){
+  .hh{font-size:1.25rem}.hp{font-size:.7rem}.bt{font-size:.7rem;padding:.5rem 1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="n">
+  <div class="nc">
+    <a href="#inicio" class="nl">🏡 Cabañas del <span>Mar</span></a>
+    <ul class="nm" id="menu">
+      <li class="mc" onclick="toggleMenu()">✕</li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#cabanas">Cabañas</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">El lugar</a></li>
+      <li><a href="#contacto" class="nb">Reservar 📅</a></li>
+    </ul>
+    <button class="nh" onclick="toggleMenu()" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="h" id="inicio">
+  <div class="hc">
+    <div class="hbadge"><span class="dot"></span> ALOJAMIENTO FRENTE AL MAR</div>
+    <h1 class="hh">Despierta mirando<br><em>el océano Pacífico</em></h1>
+    <p class="hp">Cabañas completamente equipadas con vista al mar, tinaja caliente y desayuno casero. A 15 minutos de Castro, Chiloé.</p>
+    <div class="hinfo">
+      <span>📍 Playa Quetrolauquén, Chonchi</span>
+      <span>🕐 Check-in 14:00 · Check-out 11:00</span>
+      <span>⭐ 4.9 en Google (40+ reseñas)</span>
+    </div>
+    <div class="hb">
+      <a href="#cabanas" class="bt bt-p">Ver cabañas 🏡</a>
+      <a href="https://wa.me/56975177638?text=Hola%20Cabañas%20del%20Mar,%20quiero%20reservar" target="_blank" class="bt bt-o">Consultar disponibilidad</a>
+    </div>
+  </div>
+</section>
+
+<!-- CABAÑAS -->
+<section class="sc" id="cabanas">
+  <div class="sh">
+    <div class="sl">Nuestras Cabañas</div>
+    <h2>Tres opciones, una vista inolvidable</h2>
+    <p>Todas con vista al mar, cocina equipada, baño privado y terraza. Calefacción a leña incluida.</p>
+  </div>
+  <div class="cg">
+    <div class="card">
+      <div class="card-img">🏡</div>
+      <div class="card-body">
+        <h3>Cabaña Familiar</h3>
+        <p>2 habitaciones, cocina americana, terraza con vista al mar. Ideal para familias o grupos.</p>
+        <div class="guests">👥 Hasta 5 personas · 🛏️ 2 camas + futón</div>
+        <div class="price">$65.000 <small>/ noche</small></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">💑</div>
+      <div class="card-body">
+        <div class="card-tag">MÁS PEDIDA</div>
+        <h3>Cabaña Pareja</h3>
+        <p>1 habitación con cama king, tinaja privada en terraza, cocina completa. Perfecta para escapadas.</p>
+        <div class="guests">👥 Hasta 2 personas · 🛏️ Cama king</div>
+        <div class="price">$49.000 <small>/ noche</small></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">🌿</div>
+      <div class="card-body">
+        <div class="card-tag">MEJOR VISTA</div>
+        <h3>Cabaña Superior</h3>
+        <p>2 pisos, ventanal completo al mar, tinaja exterior, chimenea. La mejor experiencia en Chiloé.</p>
+        <div class="guests">👥 Hasta 4 personas · 🛏️ 1 cama + futón doble</div>
+        <div class="price">$79.000 <small>/ noche</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<div class="dark"><section class="sc" id="servicios" style="max-width:1000px;margin:0 auto;padding:0">
+  <div class="sh">
+    <div class="sl">Servicios</div>
+    <h2>Todo lo que necesitas para descansar</h2>
+    <p>No solo camas bonitas. Esto es lo que hace que nuestros huéspedes vuelvan.</p>
+  </div>
+  <div class="sg">
+    <div class="svc"><div class="icon">🛁</div><h4>Tinaja caliente</h4><p>Leña incluida, lista al llegar</p></div>
+    <div class="svc"><div class="icon">🍳</div><h4>Desayuno casero</h4><p>Pan amasado, huevos, mermelada</p></div>
+    <div class="svc"><div class="icon">📶</div><h4>WiFi Starlink</h4><p>Internet satelital de alta velocidad</p></div>
+    <div class="svc"><div class="icon">🔥</div><h4>Calefacción a leña</h4><p>Salamandra en cada cabaña</p></div>
+    <div class="svc"><div class="icon">🚗</div><h4>Estacionamiento</h4><p>Privado dentro del terreno</p></div>
+    <div class="svc"><div class="icon">🛶</div><h4>Kayak</h4><p>2 kayaks disponibles sin costo</p></div>
+    <div class="svc"><div class="icon">🐕</div><h4>Pet friendly</h4><p>Tu mascota es bienvenida</p></div>
+    <div class="svc"><div class="icon">🧹</div><h4>Limpieza diaria</h4><p>Opcional, sin costo extra</p></div>
+  </div>
+</section></div>
+
+<!-- NOSOTROS -->
+<section class="sc" id="nosotros">
+  <div class="sh"><div class="sl">El Lugar</div><h2>Chiloé profundo, a pasos de Castro</h2></div>
+  <div class="ab">
+    <div>
+      <h2>Donde el bosque se encuentra con el mar</h2>
+      <p>Cabañas del Mar está en Playa Quetrolauquén, a 15 minutos de Castro por camino pavimentado. Nos rodean arrayanes, quilas y el sonido constante de las olas.</p>
+      <p>Somos una familia chilota que convirtió el terreno de los abuelos en un espacio de descanso. Cada cabaña fue construida con madera nativa por maestros locales. El desayuno lo prepara la tía Carmen todas las mañanas.</p>
+      <div class="ab-stats">
+        <div><strong>3</strong><span>cabañas</span></div>
+        <div><strong>8</strong><span>años</span></div>
+        <div><strong>5★</strong><span>google</span></div>
+      </div>
+    </div>
+    <div style="font-size:8rem;text-align:center">🌊</div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="sc" id="contacto">
+  <div class="cta-box">
+    <h2>¿Quieres reservar?</h2>
+    <p>Escríbenos por WhatsApp y te confirmamos disponibilidad al toque. También por teléfono al <strong>+56 9 7517 7638</strong>. Abierto todo el año.</p>
+    <a href="https://wa.me/56975177638?text=Hola%20Cabañas%20del%20Mar,%20quiero%20reservar%20una%20cabaña" target="_blank" class="bt bt-p">Reservar por WhatsApp 💬</a>
+  </div>
+
+  <div class="demo-badge">
+    <p>💡 ¿Te gustó esta página? Es un sitio One-Page creado por</p>
+    <a href="https://mr.mrcomsoluciones.cl" target="_blank">MR.COM Soluciones →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <p>🏡 Cabañas del Mar · Playa Quetrolauquén, Chonchi, Chiloé · +56 9 7517 7638</p>
+  <p>Sitio web creado por <a href="https://mr.mrcomsoluciones.cl">MR.COM Soluciones</a> — Plan One-Page — Pago único desde $59.400</p>
+</footer>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/56975177638?text=Hola%20Cabañas%20del%20Mar" target="_blank" class="wsp" aria-label="WhatsApp">💬</a>
+
+<script>
+function toggleMenu() {
+  document.getElementById('menu').classList.toggle('active');
+}
+document.querySelectorAll('#menu a').forEach(function(l) {
+  l.addEventListener('click', function() {
+    document.getElementById('menu').classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
